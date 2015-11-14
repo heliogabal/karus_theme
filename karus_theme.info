@@ -1,5 +1,5 @@
 name = Karus Theme
-description = Karus Theme<br/>Created by <a href="http://rhalbmann.de">Rainer Halbmann</a><br />Based on Business Responsive Theme by <a href="http://www.zymphonies.com">Zymphonies</a> & Designed by <a href="http://www.freebiezz.com">FreeBiezz</a>.<br/>Contact us for Drupal Design & Development <a href="mailto:info@zymphonies.com">info@zymphonies.com</a>
+description = Created by <a href="http://rhalbmann.de">Rainer Halbmann</a><br />Based on Business Responsive Theme by <a href="http://www.zymphonies.com">Zymphonies</a> & Designed by <a href="http://www.freebiezz.com">FreeBiezz</a>.
 core = 7.x
 
 engine = phptemplate
