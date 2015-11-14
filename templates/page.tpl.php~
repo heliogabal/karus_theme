@@ -69,12 +69,12 @@
   <div id="inner_header_wrapper">
 
     <header id="header" role="banner">
-      <?php if (theme_get_setting('social_links', 'karus_theme')): ?>
+      <?php if (theme_get_setting('social_links', 'business_responsive_theme')): ?>
       <div class="social-icons">
        <ul>
-        <li><a href="<?php print $front_page; ?>/rss.xml"><img src="<?php print base_path() . drupal_get_path('theme', 'karus_theme') . '/images/rss.png'; ?>" alt="RSS Feed"/></a></li>
-        <li><a href="http://www.facebook.com/<?php echo theme_get_setting('facebook_username', 'karus_theme'); ?>" target="_blank" rel="me"><img src="<?php print base_path() . drupal_get_path('theme', 'karus_theme') . '/images/facebook.png'; ?>" alt="Facebook"/></a></li>
-        <li><a href="http://www.twitter.com/<?php echo theme_get_setting('twitter_username', 'karus_theme'); ?>" target="_blank" rel="me"><img src="<?php print base_path() . drupal_get_path('theme', 'karus_theme') . '/images/twitter.png'; ?>" alt="Twitter"/></a></li>
+        <li><a href="<?php print $front_page; ?>/rss.xml"><img src="<?php print base_path() . drupal_get_path('theme', 'business_responsive_theme') . '/images/rss.png'; ?>" alt="RSS Feed"/></a></li>
+        <li><a href="http://www.facebook.com/<?php echo theme_get_setting('facebook_username', 'business_responsive_theme'); ?>" target="_blank" rel="me"><img src="<?php print base_path() . drupal_get_path('theme', 'business_responsive_theme') . '/images/facebook.png'; ?>" alt="Facebook"/></a></li>
+        <li><a href="http://www.twitter.com/<?php echo theme_get_setting('twitter_username', 'business_responsive_theme'); ?>" target="_blank" rel="me"><img src="<?php print base_path() . drupal_get_path('theme', 'business_responsive_theme') . '/images/twitter.png'; ?>" alt="Twitter"/></a></li>
        </ul>
       </div>
     <?php endif; ?>
@@ -85,6 +85,10 @@
           </a>
         </div>
       <?php endif; ?>
+      <h1 id="site-title">
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+        <div id="site-description"><?php print $site_slogan; ?></div>
+      </h1>
      <?php if ($page['search']): ?>
       <div id="search">
         <?php print render($page['search']); ?>
@@ -92,14 +96,13 @@
     <?php endif; ?>
     <div class="clear"></div>
     </header>
-    <?php if ($page['menu']): ?>
+
     <div class="menu_wrapper">
       <nav id="main-menu"  role="navigation">
       </nav><!-- end main-menu -->
       <?php print render($page['menu']); ?>
       <div class="clear"></div>
     </div>
-    <?php endif; ?>
   </div>
 </div>
  <?php // if ($is_front): ?>
@@ -131,7 +134,7 @@
     <div class="content-sidebar-wrap">
 
     <div id="content">
-      <?php if (theme_get_setting('breadcrumbs', 'karus_theme')): ?><div id="breadcrumbs"><?php if ($breadcrumb): print $breadcrumb; endif;?></div><?php endif; ?>
+      <?php if (theme_get_setting('breadcrumbs', 'business_responsive_theme')): ?><div id="breadcrumbs"><?php if ($breadcrumb): print $breadcrumb; endif;?></div><?php endif; ?>
       <section id="post-content" role="main">
         <?php print $messages; ?>
         <?php if ($page['content_top']): ?><div id="content_top"><?php print render($page['content_top']); ?></div><?php endif; ?>
