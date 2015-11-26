@@ -104,7 +104,7 @@
 </div>
  <?php // if ($is_front): ?>
     <?php print render($page['slideshow']); ?>
-     <!-- Banner -->
+     <!-- Banner -->     
   <?php // endif; ?>
   <div id="container">
 

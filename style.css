@@ -85,7 +85,7 @@ html {
 
 body {
   font-family: Tahoma, Georgia, Arial, sans-serif;
-  background: #272727;
+  background: #fff;
   color: #444;
   font-family: Arial,Helvetica,sans-serif;
   font-size:16px;
@@ -358,7 +358,6 @@ audio {
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
-  /*background-color: #9D102D;*/
 }
 @media screen and (min-width: 768px) {
   #header {
@@ -373,7 +372,7 @@ audio {
 
 #site-title a,
 #site-description {
-  color:#000;
+  color:#444;
   font-weight: 300;
 }
 
@@ -466,7 +465,7 @@ ul li, ul.menu li, ul.links li, .item-list ul li {
 
 #main-menu a {
   display: block;
-  color: rgb(153, 153, 153);
+  color: #444;
   text-align: center;
   padding: 13px 23px;
   text-decoration: none;
@@ -477,7 +476,7 @@ ul li, ul.menu li, ul.links li, .item-list ul li {
 
 #main-menu a:hover,
 #main-menu li a.active{
-  color: #FFF;
+  color: #9D102D;
   text-decoration: none;
   background: none repeat scroll 0 0 #9D102D;
 }
@@ -610,7 +609,7 @@ ul li, ul.menu li, ul.links li, .item-list ul li {
 }
 #block-menu-block-1 ul.menu li a {
   display: inline-block;
-  color: rgb(153, 153, 153);
+  color: #444;
   text-align: center;
   padding: .3em 1em;
   text-decoration: none;
@@ -619,24 +618,24 @@ ul li, ul.menu li, ul.links li, .item-list ul li {
   font-weight: bold;
 }
 #block-menu-block-1 ul.menu li a:hover {
-  color: #FFF;
+  color: #9d102d;
   text-decoration: none;
   /*background: none repeat scroll 0 0 #9D102D;*/
   border-bottom: 4px solid #9d102d;
 }
 #block-menu-block-1 ul.menu li a.active,
 #block-menu-block-1 ul.menu li a.active:hover {
-  color: #FFF;
+  color: #9d102d;
   text-decoration: none;
 }
 #block-menu-block-1 ul.menu li li a.active {
-  color: #FFF;
+  color: #9d102d;
   text-decoration: none;
   /*background: #9D102D;
   border-bottom: 4px solid #9d102d;*/
 }
 #block-menu-block-1 ul.menu > li.active-trail > a.active {
-  color: #fff;
+  color: #9d102d;
   border-bottom: 4px solid #9d102d;
   /*background: #333;*/
 }
@@ -645,7 +644,7 @@ ul li, ul.menu li, ul.links li, .item-list ul li {
   border-bottom: 4px solid #9d102d;
 }
 #block-menu-block-1 ul.menu > li.active-trail > ul > li > a.active-trail {
-  color: #fff;
+  color: #9d102d;
   border: none;
   /*background: #333;*/
 }
@@ -746,11 +745,12 @@ li.expanded > a {
 }
 #footer a {
   display: block;
-  padding: 1em 0 0;
+  padding: 0;
+  color: #808080;
 }
 #footer a:hover {
   text-decoration: underline;
-  color: #808080;
+  color: #9d102d;
 }
 
 #container {
@@ -1077,7 +1077,6 @@ body.sidebar-second #sidebar-second {
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: bold;
-  color: #ddd;
 }
 
 #footer-area ul.menu li a.active{
@@ -1758,13 +1757,17 @@ ol.search-results { padding-left: 0; }
 
 #footer {
   clear: both;
-  color: #8A8A8A;
-  background: rgb(39, 39, 39);
-  margin-top: 1em;
+  color: #444;
+  margin: 1em 0;
 }
 
-#footer a{
+#footer a {
+  color: #444;
+}
+
+#footer a:hover {
   color: #9D102D;
+  text-decoration: underline;
 }
 
 #footer_wrapper{
@@ -1774,14 +1777,6 @@ ol.search-results { padding-left: 0; }
 
 #footer-area {
   position:relative;
-  color:rgb(128, 128, 128);
-  /*background: #333;*/
-}
-
-#footer-area .column {
-  /*float: left;
-  width: 100%;
-  margin: 10px;*/
 }
 
 #footer-area .column:first-child {
@@ -1794,7 +1789,6 @@ ol.search-results { padding-left: 0; }
 .region-footer-first,
 .region-footer-second {
   padding-top: 1em;
-  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .region-footer-first,
@@ -1803,11 +1797,9 @@ ol.search-results { padding-left: 0; }
     float: left;
   }
   .region-footer-first {
-    padding-left: 2em;
     text-align: left;
   }
   .region-footer-second {
-    padding-right: 2em;
     text-align: right;
   }
 }
