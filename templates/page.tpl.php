@@ -64,11 +64,9 @@
  * @see template_process()
  */
 ?>
-
 <div id="header_wrapper">
   <div id="inner_header_wrapper">
-
-    <header id="header" role="banner">
+    <header id="header">
       <?php if (theme_get_setting('social_links', 'karus_theme')): ?>
       <div class="social-icons">
        <ul>
@@ -81,7 +79,7 @@
       <?php if ($logo): ?>
         <div id="logo">
           <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-            <img src="<?php print $logo; ?>"/>
+            <img src="<?php print $logo; ?>" alt="karus Steuerberatungsgesellschaft mbH Logo" />
           </a>
         </div>
       <?php endif; ?>
@@ -104,12 +102,10 @@
 </div>
  <?php // if ($is_front): ?>
     <?php print render($page['slideshow']); ?>
-     <!-- Banner -->     
+     <!-- Banner -->
   <?php // endif; ?>
   <div id="container">
-
     <?php if ($is_front): ?>
-
      <?php if ($page['top_first'] || $page['top_second'] || $page['top_third']): ?>
       <div id="top-area" class="clearfix">
         <?php if ($page['top_first']): ?>
@@ -123,13 +119,9 @@
         <?php endif; ?>
       </div>
     <?php endif; ?>
-
     <?php print render($page['front_welcome']); ?>
-
     <?php endif; ?>
-
     <div class="content-sidebar-wrap">
-
     <div id="content">
       <?php if (theme_get_setting('breadcrumbs', 'karus_theme')): ?><div id="breadcrumbs"><?php if ($breadcrumb): print $breadcrumb; endif;?></div><?php endif; ?>
       <section id="post-content" role="main">
@@ -144,23 +136,18 @@
         <?php print render($page['content']); ?>
       </section> <!-- /#main -->
     </div>
-
     <?php if ($page['sidebar_first']): ?>
       <aside id="sidebar-first" role="complementary">
         <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
-
     </div>
-
     <?php if ($page['sidebar_second']): ?>
       <aside id="sidebar-second" role="complementary">
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
-
 </div>
-
 <div id="footer">
   <div id="footer_wrapper">
     <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third']): ?>
@@ -184,11 +171,6 @@
         <?php print render($page['footer']) ?>
       </div>
    <?php endif; ?>
-
-    <!--<div id="copyright">
-     <p class="copyright"><?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <?php print $site_name; ?> </p>
-    <div class="clear"></div>
-    </div>-->
   </div>
   </div>
 </div>
