@@ -38,10 +38,20 @@
 }
 
 @media screen and (max-width: 640px) {
+  body {
+    font-size: 1em !important;
+  }
+  #container {
+    display: block !important;
+    height: auto !important;
+  }
 .front .menu,
 #foot,
 #foot .menu {
 	flex-direction: column;
+}
+.front .menu li a  {
+  font-size: 1em;
 }
 
   #header{

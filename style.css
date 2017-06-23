@@ -84,12 +84,16 @@ html {
 }
 
 body {
-  font-family: Tahoma, Georgia, Arial, sans-serif;
   background: #fff;
   color: #444;
   font-family: Arial,Helvetica,sans-serif;
   font-size:1.3em;
   line-height:160%;
+  overflow-x: hidden;
+  width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 a {
@@ -362,6 +366,9 @@ audio {
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   #header {
@@ -486,7 +493,7 @@ ul, ol, div.item-list ul{
 }
 
 ul li, ul.menu li, ul.links li, .item-list ul li {
-  background: url("images/marker.png") no-repeat scroll left 6px transparent;
+  /*background: url("images/marker.png") no-repeat scroll left 6px transparent;*/
   list-style: none outside none;
   margin: 0 0 2px;
   padding: 0 0 0 15px;
@@ -754,15 +761,14 @@ li.expanded > a {
 #block-menu-menu-footer-menu li {
   display: inline-block;
   background: none;
-  padding: 0 0 0 1em;
+  padding: 0;
 }
 #block-menu-menu-footer-menu a {
   text-transform: uppercase;
+  padding: 1em;
 }
 #footer a {
   display: block;
-  padding: 0;
-  color: #808080;
 }
 #footer a:hover {
   text-decoration: underline;
@@ -773,10 +779,9 @@ li.expanded > a {
   clear: both;
   margin: 0 auto;
   max-width: 1000px;
-  overflow: hidden;
   padding: 1%;
   /*background: #f9f9f9;*/
-  background: Ã#fff;
+  background: #fff;
 }
 
 .region-slideshow {
@@ -1815,12 +1820,15 @@ ul.menu li{
 
 /* Special styles for new splash homepage */
 html, body {
-        height: 100%;
-        margin: 0px;
+        margin: 0;
+        overflow-x: hidden;
     }
-body.front {
-	overflow: hidden;
+body {
+  position: relative;
 }
+/*body.front {
+	overflow: hidden;
+}*/
 body.front,
 .front #container {
 	/*background: #9C112E;
@@ -1840,12 +1848,14 @@ body.front,
 	font-weight: bold;
 }
 .front header {
-	display: none;
+	display: none !important;
 }
 .front .content img {
 	margin: 2em auto;
 	display: block;
 	text-align: center;
+      max-width: 400px;
+      width: 100%;
 }
 .front .menu li a {
     font-family: Candara, Verdana, Helvetica, sans-serif;
@@ -1860,10 +1870,17 @@ body.front,
 #foot,
 #foot .menu {
 	display: flex;
+      flex-direction: row;
  	justify-content: center;
+      align-items: center;
 	margin: 0;
+      max-width: 100%;
 }
-.front ul.menu li {
+ul.menu li {
 	margin: 0;
 	padding: 0;
+}
+
+.field-name-title h2 {
+  padding-right: 4em;
 }
