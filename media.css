@@ -38,6 +38,12 @@
 }
 
 @media screen and (max-width: 640px) {
+.front .menu,
+#foot,
+#foot .menu {
+	flex-direction: column;
+}
+
   #header{
     padding-top: 2em;
   }

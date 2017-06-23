@@ -333,6 +333,10 @@ audio {
   margin-bottom: .5em;
 }
 
+.content {
+	position: relative;
+}
+
 .content a img {
   padding:5px;
   box-shadow:0 0 3px #EEE;
@@ -417,6 +421,7 @@ audio {
 .downloads .views-row {
   border-bottom: 1px solid #D3D7D9;
   margin-bottom: 2em;
+  position: relative;
 }
 .insonews .views-row-1,
 .merkblaetter .views-row-1,
@@ -424,6 +429,20 @@ audio {
   margin-top: 2em;
   padding-top: 2em;
   border-top: 1px solid #D3D7D9;
+}
+li.print_html {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.insonews .views-row-1 li.print_html {
+    top: 3.2em;
+}
+
+li.node-readmore {
+    position: absolute;
+    bottom: 1.8em;
+    right: 0;
 }
 @media screen and (min-width: 767px) {
   .field-name-field-view .field-name-body {
@@ -1834,12 +1853,17 @@ body.front,
     font-weight: regular;
     text-decoration: none;
     color: #666;
-    padding: 1em 0;
+    padding: 1em;
+    display: block;
 }
-.front .menu li.first {
-	float: left;
-	margin-left: 0;
+.front .menu,
+#foot,
+#foot .menu {
+	display: flex;
+ 	justify-content: center;
+	margin: 0;
 }
-.front .menu li.last {
-	float: right;
+.front ul.menu li {
+	margin: 0;
+	padding: 0;
 }
