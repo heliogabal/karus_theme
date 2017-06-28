@@ -1840,8 +1840,14 @@ body.front,
 	display: flex;
 	flex-direction: column;
   	justify-content: center;
+	items-align: center;
 	height: 100%;
+	height: calc(100vh - 29px);
 	max-width: 650px;
+	padding: 0;
+}
+.front #footer {
+	display: none;
 }
 .front a {
 	color: #666;
