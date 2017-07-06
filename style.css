@@ -1866,7 +1866,7 @@ body.front,
 .front .menu li a {
     font-family: Candara, Verdana, Helvetica, sans-serif;
     font-size: 24px;
-    font-weight: regular;
+    font-weight: normal;
     text-decoration: none;
     color: #666;
     padding: 1em;
