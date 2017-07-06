@@ -1834,7 +1834,6 @@ body.front,
 	/*background: #9C112E;
 	color: #fff;*/
 	background: #fff;
-	font-family: Candara, Verdana, Helvetica, sans-serif;
 }
 .front #container {
 	display: flex;
@@ -1850,8 +1849,8 @@ body.front,
 	display: none;
 }
 .front a {
-	color: #666;
-	font-weight: bold;
+	color: #444;
+	font-weight: normal;
 }
 .front header {
 	display: none !important;
@@ -1864,13 +1863,17 @@ body.front,
       width: 100%;
 }
 .front .menu li a {
-    font-family: Candara, Verdana, Helvetica, sans-serif;
-    font-size: 24px;
     font-weight: normal;
     text-decoration: none;
-    color: #666;
+    text-transform: uppercase;
+    color: #444;
     padding: 1em;
     display: block;
+}
+.front .menu li a:hover,
+.front a:hover {
+    color: #9d102d;
+    text-decoration: underline;
 }
 .front .menu,
 #foot,
