@@ -984,8 +984,8 @@ li.expanded > a {
 }
 #search-api-page-search-form-suche input.form-submit {
     position: absolute;
-    right: 4em;
-    top: 2em;
+    right: 3em;
+    top: 1.5em;
     font-weight: bold;
     text-indent: -999em;
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABcUlEQVRIib3Uu05bQRDG8Z8UqgQpXZQGGkyfIrUlJ+AK8yxAHoQWkzeg4gkSCD2mSXDPpeMiCyUVIcXO0Tmy7HPWkeGTVlqt5pv/zuyFyepiH0M8xBjG2voUT5ZWcYynhvE9YmdSG7eVJEfYwkaM7TH4bXiy1MJ9GC/RifU3+DgW28FVBdLKAfwIwwWW8BZ7+BPr41qOjTzhW1PyNWXZnUh+hkf0sTnFt17xfaoDfFUenNj5X6nvTSoq368LGkbQFhbxu8lQ0XZ4f9UFjSKoJx1oMc9RL+JHuYBZlQU4V7ZoVu3IaFFxyMf/ATgJb78uqHpNP8+QvCvzmlJ+ARfSI2rSMq5lPjTSc78Lw5X6SrqV5DfhfYeFJkg7DEXZJ9Ih9mJ8Ufa8SN7GawxwkANpSS8657teieSHlfUsCOnQ+vgp3fFRzPvKn/Y9TifAsyFNWohkkyp8Mcir54bszgNQB7mbF2AaZDBPAKnnu9LOB/jwDwIWouGFz/PzAAAAAElFTkSuQmCC") no-repeat;
