@@ -768,7 +768,7 @@ li.expanded > a {
   padding: 1em;
 }
 #footer a {
-  display: block;
+  display: inline-block;
 }
 #footer a:hover {
   text-decoration: underline;
@@ -1757,10 +1757,8 @@ ol.search-results { padding-left: 0; }
 }
 
 .footer_credit{
-  color: #777;
-  font-family: Arial;
-  overflow: auto;
   padding: 10px 0px;
+  text-align: center;
 }
 
 .footer_inner_credit{
